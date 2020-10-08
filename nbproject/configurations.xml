@@ -15,6 +15,7 @@
       <itemPath>main.asm</itemPath>
       <itemPath>clock.asm</itemPath>
       <itemPath>test.asm</itemPath>
+      <itemPath>clock_2.asm</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -507,6 +508,8 @@
                   value=""/>
         <property key="warningmessagebreakoptions.warningmessages" value="holdstate"/>
       </Simulator>
+      <item path="clock.asm" ex="true" overriding="false">
+      </item>
       <item path="main.asm" ex="true" overriding="false">
       </item>
       <mpasmsuite>

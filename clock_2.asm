@@ -11,8 +11,8 @@ LIST P=16F628A
  ENDC
  
  
- Periodo_4ms	EQU d'180'; 
- Periodo_ms	EQU d'1'
+ ;Periodo_4ms	EQU d'180'; 
+ Bucle		EQU d'2'
  Columnas	EQU d'16' 
 
  #DEFINE LED PORTB,0
@@ -29,12 +29,12 @@ LIST P=16F628A
     BCF	    LED
     bcf	    LATCH
     bcf	    CLOCK
-    MOVLW   B'00000011'; 16 PRESCALER TRM0
+    MOVLW   B'00000000'; 16 PRESCALER TRM0
     MOVWF   OPTION_REG
     BCF	    STATUS,RP0
-    MOVLW   Periodo_4ms
-    MOVWF   TMR0
-    MOVLW   Periodo_ms
+    ;MOVLW   Periodo_4ms
+    ;MOVWF   TMR0
+    MOVLW   Bucle
     MOVWF   Reg_Tiempos
     movlw   Columnas
     movwf   Reg_Ciclos
@@ -45,14 +45,14 @@ START
     GOTO    $; bucle infinito
 ;interrupcion
 TMR0_INT
-    movlw   Periodo_4ms
-    movwf   TMR0
+    ;movlw   Periodo_4ms
+    ;movwf   TMR0
     bcf	    LATCH
     decfsz  Reg_Tiempos,F ; decrementa en 1 y si es cero salta, sino conitnua a siguiente linea
     GOTO    FIN_INIT    
     goto    CICLO 
 CICLO
-    MOVLW   Periodo_ms
+    MOVLW   Bucle
     MOVWF   Reg_Tiempos
     decfsz  Reg_Ciclos,F
     goto    APAGA
@@ -76,5 +76,8 @@ FIN_INIT
     
     END
     
+
+
+
 
 
