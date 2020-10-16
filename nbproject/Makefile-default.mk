@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=clock_2.asm
+SOURCEFILES_QUOTED_IF_SPACED=clock.asm
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/clock_2.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/clock_2.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/clock.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/clock.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/clock_2.o
+OBJECTFILES=${OBJECTDIR}/clock.o
 
 # Source Files
-SOURCEFILES=clock_2.asm
+SOURCEFILES=clock.asm
 
 
 
@@ -95,30 +95,30 @@ MP_LINKER_DEBUG_OPTION=
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: assemble
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-${OBJECTDIR}/clock_2.o: clock_2.asm  nbproject/Makefile-${CND_CONF}.mk
+${OBJECTDIR}/clock.o: clock.asm  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/clock_2.o.d 
-	@${RM} ${OBJECTDIR}/clock_2.o 
-	@${FIXDEPS} dummy.d -e "C:/proyectos/pic/16F628A_SeqInterrup/16F628A_SeqInterrup.X/clock_2.ERR" $(SILENT) -c ${MP_AS} $(MP_EXTRA_AS_PRE) -d__DEBUG -d__MPLAB_DEBUGGER_SIMULATOR=1 -q -p$(MP_PROCESSOR_OPTION)  $(ASM_OPTIONS)    \"C:/proyectos/pic/16F628A_SeqInterrup/16F628A_SeqInterrup.X/clock_2.asm\" 
-	@${MV}  C:/proyectos/pic/16F628A_SeqInterrup/16F628A_SeqInterrup.X/clock_2.O ${OBJECTDIR}/clock_2.o
-	@${MV}  C:/proyectos/pic/16F628A_SeqInterrup/16F628A_SeqInterrup.X/clock_2.ERR ${OBJECTDIR}/clock_2.o.err
-	@${MV}  C:/proyectos/pic/16F628A_SeqInterrup/16F628A_SeqInterrup.X/clock_2.LST ${OBJECTDIR}/clock_2.o.lst
-	@${RM}  C:/proyectos/pic/16F628A_SeqInterrup/16F628A_SeqInterrup.X/clock_2.HEX 
-	@${DEP_GEN} -d "${OBJECTDIR}/clock_2.o"
-	@${FIXDEPS} "${OBJECTDIR}/clock_2.o.d" $(SILENT) -rsi ${MP_AS_DIR} -c18 
+	@${RM} ${OBJECTDIR}/clock.o.d 
+	@${RM} ${OBJECTDIR}/clock.o 
+	@${FIXDEPS} dummy.d -e "C:/proyectos/pic/16F628A_SeqInterrup/16F628A_SeqInterrup.X/clock.ERR" $(SILENT) -c ${MP_AS} $(MP_EXTRA_AS_PRE) -d__DEBUG -d__MPLAB_DEBUGGER_SIMULATOR=1 -q -p$(MP_PROCESSOR_OPTION)  $(ASM_OPTIONS)    \"C:/proyectos/pic/16F628A_SeqInterrup/16F628A_SeqInterrup.X/clock.asm\" 
+	@${MV}  C:/proyectos/pic/16F628A_SeqInterrup/16F628A_SeqInterrup.X/clock.O ${OBJECTDIR}/clock.o
+	@${MV}  C:/proyectos/pic/16F628A_SeqInterrup/16F628A_SeqInterrup.X/clock.ERR ${OBJECTDIR}/clock.o.err
+	@${MV}  C:/proyectos/pic/16F628A_SeqInterrup/16F628A_SeqInterrup.X/clock.LST ${OBJECTDIR}/clock.o.lst
+	@${RM}  C:/proyectos/pic/16F628A_SeqInterrup/16F628A_SeqInterrup.X/clock.HEX 
+	@${DEP_GEN} -d "${OBJECTDIR}/clock.o"
+	@${FIXDEPS} "${OBJECTDIR}/clock.o.d" $(SILENT) -rsi ${MP_AS_DIR} -c18 
 	
 else
-${OBJECTDIR}/clock_2.o: clock_2.asm  nbproject/Makefile-${CND_CONF}.mk
+${OBJECTDIR}/clock.o: clock.asm  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/clock_2.o.d 
-	@${RM} ${OBJECTDIR}/clock_2.o 
-	@${FIXDEPS} dummy.d -e "C:/proyectos/pic/16F628A_SeqInterrup/16F628A_SeqInterrup.X/clock_2.ERR" $(SILENT) -c ${MP_AS} $(MP_EXTRA_AS_PRE) -q -p$(MP_PROCESSOR_OPTION)  $(ASM_OPTIONS)    \"C:/proyectos/pic/16F628A_SeqInterrup/16F628A_SeqInterrup.X/clock_2.asm\" 
-	@${MV}  C:/proyectos/pic/16F628A_SeqInterrup/16F628A_SeqInterrup.X/clock_2.O ${OBJECTDIR}/clock_2.o
-	@${MV}  C:/proyectos/pic/16F628A_SeqInterrup/16F628A_SeqInterrup.X/clock_2.ERR ${OBJECTDIR}/clock_2.o.err
-	@${MV}  C:/proyectos/pic/16F628A_SeqInterrup/16F628A_SeqInterrup.X/clock_2.LST ${OBJECTDIR}/clock_2.o.lst
-	@${RM}  C:/proyectos/pic/16F628A_SeqInterrup/16F628A_SeqInterrup.X/clock_2.HEX 
-	@${DEP_GEN} -d "${OBJECTDIR}/clock_2.o"
-	@${FIXDEPS} "${OBJECTDIR}/clock_2.o.d" $(SILENT) -rsi ${MP_AS_DIR} -c18 
+	@${RM} ${OBJECTDIR}/clock.o.d 
+	@${RM} ${OBJECTDIR}/clock.o 
+	@${FIXDEPS} dummy.d -e "C:/proyectos/pic/16F628A_SeqInterrup/16F628A_SeqInterrup.X/clock.ERR" $(SILENT) -c ${MP_AS} $(MP_EXTRA_AS_PRE) -q -p$(MP_PROCESSOR_OPTION)  $(ASM_OPTIONS)    \"C:/proyectos/pic/16F628A_SeqInterrup/16F628A_SeqInterrup.X/clock.asm\" 
+	@${MV}  C:/proyectos/pic/16F628A_SeqInterrup/16F628A_SeqInterrup.X/clock.O ${OBJECTDIR}/clock.o
+	@${MV}  C:/proyectos/pic/16F628A_SeqInterrup/16F628A_SeqInterrup.X/clock.ERR ${OBJECTDIR}/clock.o.err
+	@${MV}  C:/proyectos/pic/16F628A_SeqInterrup/16F628A_SeqInterrup.X/clock.LST ${OBJECTDIR}/clock.o.lst
+	@${RM}  C:/proyectos/pic/16F628A_SeqInterrup/16F628A_SeqInterrup.X/clock.HEX 
+	@${DEP_GEN} -d "${OBJECTDIR}/clock.o"
+	@${FIXDEPS} "${OBJECTDIR}/clock.o.d" $(SILENT) -rsi ${MP_AS_DIR} -c18 
 	
 endif
 
